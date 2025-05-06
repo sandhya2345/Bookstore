@@ -1,0 +1,397 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\onlinebookstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:onlinebookstore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\views\\books\\browse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:views\\books\\browse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\viewmodels\\bookbrowseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:viewmodels\\bookbrowseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\views\\cart\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:views\\cart\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\models\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:models\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|c:\\users\\speed\\downloads\\metrobooks(base) - copy\\metrobooks(base) - copy\\models\\announcement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7249CB95-0D75-4A0D-BADA-3450D6D0F195}|OnlineBookStore.csproj|solutionrelative:models\\announcement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Services\\EmailService.cs",
+              "RelativeToolTip": "Services\\EmailService.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAABkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T07:19:14.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BookBrowseViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\ViewModels\\BookBrowseViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\BookBrowseViewModel.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\ViewModels\\BookBrowseViewModel.cs",
+              "RelativeToolTip": "ViewModels\\BookBrowseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T06:00:38.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OnlineBookStore.csproj",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\OnlineBookStore.csproj",
+              "RelativeDocumentMoniker": "OnlineBookStore.csproj",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\OnlineBookStore.csproj",
+              "RelativeToolTip": "OnlineBookStore.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-02T05:59:29.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Browse.cshtml",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Books\\Browse.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Browse.cshtml",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Books\\Browse.cshtml",
+              "RelativeToolTip": "Views\\Books\\Browse.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T05:01:30.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Controllers\\BookController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAIwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T04:54:16.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "OrderConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Cart\\OrderConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\OrderConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Cart\\OrderConfirmation.cshtml",
+              "RelativeToolTip": "Views\\Cart\\OrderConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T04:38:09.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrderItems.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\OrderItems.cs",
+              "RelativeDocumentMoniker": "Models\\OrderItems.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\OrderItems.cs",
+              "RelativeToolTip": "Models\\OrderItems.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAYwBAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:59:15.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-02T03:47:19.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cart\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-02T03:32:10.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwEoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T15:01:46.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T14:27:19.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "Models\\ShoppingCart.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\ShoppingCart.cs",
+              "RelativeToolTip": "Models\\ShoppingCart.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwBMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T14:15:38.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\CartController.cs",
+              "RelativeToolTip": "Controllers\\CartController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wCIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T14:09:42.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T13:57:14.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:24:52.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\ApplicationDBContext.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationDBContext.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\ApplicationDBContext.cs",
+              "RelativeToolTip": "Models\\ApplicationDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:43:22.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\TestController.cs",
+              "RelativeToolTip": "Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:35:28.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowB8AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:35:27.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Announcement.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\Announcement.cs",
+              "RelativeDocumentMoniker": "Models\\Announcement.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\Announcement.cs",
+              "RelativeToolTip": "Models\\Announcement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:34:43.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:34:19.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAswBgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-01T13:25:31.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-01T13:24:24.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\speed\\Downloads\\MetroBooks(Base) - Copy\\MetroBooks(Base) - Copy\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T13:24:16.388Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

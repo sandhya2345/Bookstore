@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Database Test";
+}
+
+<div class="min-h-screen bg-gray-100 py-10 px-6">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8">
+        <div class="flex items-center space-x-3 mb-6">
+            <i class="fas fa-database text-3xl text-blue-600"></i>
+            <h1 class="text-3xl font-bold text-gray-800">Database Test Results</h1>
+        </div>
+
+        <p class="text-gray-600 mb-8">
+            Mero bhunti, below is the verification of database connection and listing of all the tables we made in MySQL:
+        </p>
+
+        <div class="mb-6">
+            <div class="px-4 py-3 rounded-md text-white text-lg font-medium
+                        @(ViewBag.IsConnected ? "bg-green-500" : "bg-red-500")">
+                <i class="fas @(ViewBag.IsConnected ? "fa-check-circle" : "fa-exclamation-circle") mr-2"></i>
+                @ViewBag.Message
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+                <i class="fas fa-table mr-2 text-blue-500"></i>
+                Available Tables
+            </h3>
+            <ul class="list-disc list-inside text-gray-700 space-y-1 pl-2">
+                <li>Users</li>
+                <li>Books</li>
+                <li>Whitelist</li>
+                <li>ShoppingCart</li>
+                <li>Orders</li>
+                <li>OrderItems</li>
+                <li>Reviews</li>
+                <li>Discounts</li>
+                <li>Announcements</li>
+            </ul>
+        </div>
+    </div>
+</div>

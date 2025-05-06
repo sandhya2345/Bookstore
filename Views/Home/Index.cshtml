@@ -1,0 +1,193 @@
+﻿@{
+    ViewData["Title"] = "Welcome to MetroBook";
+}
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-gray-500 via-white-600 to-grey-500 py-32">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <!-- Hero Text -->
+        <div class="space-y-6 animate-fade-in-up">
+            <span class="text-white font-semibold uppercase tracking-wide text-sm">Welcome to MetroBook</span>
+            <h1 class="text-5xl font-extrabold text-white leading-tight">
+                Unlock a World of Books
+            </h1>
+            <p class="text-lg text-gray-200">
+                Discover award-winning novels, bestselling thrillers, academic essentials, and timeless classics—all in one place.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 mt-6">
+                <a href="#featured-books" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-600 transition-all ease-in-out duration-300 transform hover:scale-105">
+                    <i class="fas fa-sign-in-alt mr-2"></i> Start Exploring
+                </a>
+                <a asp-action="Register" asp-controller="Account"
+                   class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-600 transition-all ease-in-out duration-300 transform hover:scale-105">
+                    <i class="fas fa-user-plus mr-2"></i> Create Account
+                </a>
+                <a asp-action="Login" asp-controller="Account"
+                   class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-600 transition-all ease-in-out duration-300 transform hover:scale-105">
+                    <i class="fas fa-sign-in-alt mr-2"></i> Login
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero Image Section -->
+        <div class="animate-fade-in-up delay-200">
+            <img src="https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                 alt="Person holding a book"
+                 class="rounded-xl shadow-2xl w-full h-auto object-cover hover:scale-105 transform transition-all duration-300">
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="bg-gray-100 py-28">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900">Why Choose MetroBook?</h2>
+            <p class="text-gray-600 text-lg mt-4 max-w-xl mx-auto">
+                Our bookstore is built for passionate readers. Enjoy these amazing features designed for your reading journey.
+            </p>
+        </div>
+
+        <div class="grid gap-10 md:grid-cols-3">
+            <!-- Card 1 (Exclusive Discounts) -->
+            <div class="bg-gray rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 border-l-4 border-black-600 cursor-pointer" onclick="scrollToSection('exclusive-discounts')">
+                <div class="text-5xl text-black-600 mb-4">
+                    <i class="fas fa-tags"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Exclusive Discounts</h3>
+                <p class="text-gray-700">Enjoy member-only pricing, bundle savings, and special promotional offers.</p>
+            </div>
+
+            <!-- Card 2 (Fast & Free Delivery) -->
+            <div class="bg-black rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 border-l-4 border-white-600 cursor-pointer"
+                 onclick="openDeliveryModal()">
+                <div class="text-5xl text-white mb-4">
+                    <i class="fas fa-truck-fast"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-white">Fast & Free Delivery</h3>
+                <p class="text-white">We deliver books straight to your door — fast, safe, and always free for members.</p>
+            </div>
+
+            <!-- Card 3 (Top-Rated Reads) -->
+            <div class="bg-gray rounded-2xl p-8 shadow-xl hover:shadow-2xl transition duration-300 transform hover:scale-105 border-l-4 border-white-600 cursor-pointer" onclick="scrollToSection('featured-books')">
+                <div class="text-5xl text-white-600 mb-4">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800">Top-Rated Reads</h3>
+                <p class="text-gray-700">Explore curated collections of must-reads, award winners, and trending picks.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Exclusive Discounts Section -->
+<section id="exclusive-discounts" class="bg-indigo-50 py-28">
+    <h1 style="text-align:center;">Exclusive Sells Goes Here</h1>
+</section>
+
+<!-- Featured Books Section -->
+<section id="featured-books" class="bg-white py-28">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-900">Featured Books</h2>
+            <p class="text-gray-600 text-lg mt-4 max-w-xl mx-auto">
+                Handpicked reads from our latest and greatest collection.
+            </p>
+        </div>
+
+        <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+            @foreach (var book in ViewBag.FeaturedBooks)
+            {
+                <div class="bg-gray-100 rounded-xl p-6 shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300">
+                    <div class="relative w-full h-60 mb-4 overflow-hidden">
+                        <img src="@book.CoverImageUrl" alt="@book.Title" class="w-full h-full object-contain transition-transform duration-300 transform scale-90 hover:scale-100" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-1">@book.Title</h3>
+                    <p class="text-sm text-gray-600 mb-1">by @book.Author</p>
+                    <p class="text-sm text-gray-500 mb-3">@book.Genre</p>
+                    <p class="font-bold text-lg text-gray-800 mb-4">$@book.Price</p>
+
+                    <div class="flex flex-col gap-2">
+                        <a asp-action="Login" asp-controller="Account"
+                           class="bg-gray-800 text-white text-center py-2 rounded hover:bg-black transition duration-300">
+                            <i class="fas fa-shopping-cart mr-1"></i> Add to Cart
+                        </a>
+                        <a asp-action="Login" asp-controller="Account"
+                           class="bg-white border border-gray-800 text-gray-800 text-center py-2 rounded hover:bg-gray-100 transition duration-300">
+                            <i class="fas fa-bolt mr-1"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+
+        <!-- View More Books Button -->
+        <div class="text-center mt-12">
+            <a asp-action="Login" asp-controller="Account"
+               class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                View More Books
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Delivery Modal - Glass Effect -->
+<div id="deliveryModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <!-- Modal Background with Blur Effect -->
+    <div class="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-lg"></div>
+
+    <!-- Modal Content -->
+    <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-2xl shadow-xl max-w-lg w-full p-8 border border-white border-opacity-30 relative animate-fade-in-up">
+        <!-- Close Button -->
+        <button onclick="closeDeliveryModal()" class="absolute top-3 right-3 text-white text-2xl hover:text-indigo-300 transition">
+            &times;
+        </button>
+
+        <!-- Modal Content -->
+        <h2 class="text-2xl font-bold text-white mb-4">Fast & Free Delivery</h2>
+        <p class="text-white text-opacity-90 text-lg mb-6 leading-relaxed">
+            At MetroBook, your time matters. That’s why we pack and ship your favorite titles with utmost care.
+            Expect secure, eco-friendly packaging and fast delivery within 2–3 business days — completely free for our members.
+            Your books, delivered with love.
+        </p>
+
+        <!-- OK Button -->
+        <div class="text-center">
+            <button onclick="closeDeliveryModal()" class="bg-white bg-opacity-20 text-white border border-white border-opacity-30 px-6 py-2 rounded-full hover:bg-white hover:text-gray-800 transition-all duration-300 font-semibold backdrop-blur-sm">
+                Okay, Got it!
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript for Modal and Smooth Scroll -->
+<script>
+    function scrollToSection(id) {
+        const targetSection = document.getElementById(id);
+        targetSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+
+    function openDeliveryModal() {
+        document.getElementById('deliveryModal').classList.remove('hidden');
+    }
+
+    function closeDeliveryModal() {
+        document.getElementById('deliveryModal').classList.add('hidden');
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            targetSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
+</script>
