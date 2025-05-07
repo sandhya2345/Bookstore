@@ -19,7 +19,7 @@ namespace OnlineBookStore.Models
 
         [Required]
         [StringLength(20)]
-        public string ISBN { get; set; }
+        public string? ISBN { get; set; }
 
         [Required]
         [StringLength(100)]
@@ -29,7 +29,7 @@ namespace OnlineBookStore.Models
         [StringLength(100)]
         public string Author { get; set; }
 
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -54,7 +54,7 @@ namespace OnlineBookStore.Models
         [Range(0, 5)]
         public decimal AverageRating { get; set; } = 0.00m;
 
-        public DateTime? PublicationDate { get; set; }
+        public DateTime PublicationDate { get; set; }
 
         public DateTime AddedDate { get; set; } = DateTime.UtcNow;
 

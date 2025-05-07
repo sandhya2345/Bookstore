@@ -8,30 +8,30 @@ namespace OnlineBookStore.Models
         Staff,
         Admin
     }
-
     public class User
     {
         public int UserId { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Username { get; set; }
+        public string? Username { get; set; }
 
         [Required]
         [EmailAddress]
         [StringLength(100)]
+        
         public string Email { get; set; }
 
         [Required]
-        public string PasswordHash { get; set; }
+        public string? PasswordHash { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
 
         [Required]
         public UserRole Role { get; set; } = UserRole.Member;
@@ -43,6 +43,6 @@ namespace OnlineBookStore.Models
         public bool IsActive { get; set; } = true;
 
 
-        public ICollection<Announcement> Announcements { get; set; }
+        public ICollection<Announcement>? Announcements { get; set; }
     }
 }

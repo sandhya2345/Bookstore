@@ -147,10 +147,12 @@ namespace OnlineBookStore.Controllers
             if (user != null)
             {
                 await _emailService.SendOrderEmailAsync(
-                    user.Email,
-                    newOrder.ClaimCode,
-                    newOrder.FinalAmount
-                );
+    user.Email,
+    newOrder.ClaimCode,
+    newOrder.FinalAmount,
+    user.FirstName ?? user.Email
+);
+
             }
 
             TempData["Success"] = "Order placed! Check your email for your claim code.";

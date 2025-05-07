@@ -428,3 +428,4 @@ C:\Users\speed\Desktop\MetroBooks(Base) - Copy\obj\Debug\net8.0\refint\OnlineBoo
 C:\Users\speed\Desktop\MetroBooks(Base) - Copy\obj\Debug\net8.0\OnlineBookStore.pdb
 C:\Users\speed\Desktop\MetroBooks(Base) - Copy\obj\Debug\net8.0\OnlineBookStore.genruntimeconfig.cache
 C:\Users\speed\Desktop\MetroBooks(Base) - Copy\obj\Debug\net8.0\ref\OnlineBookStore.dll
+C:\Users\speed\Desktop\MetroBooks(Base) - Copy\obj\Debug\net8.0\OnlineBookStore.sourcelink.json
