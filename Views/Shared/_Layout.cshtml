@@ -52,7 +52,7 @@
 
         /* Gradient Background for Header and Footer */
         .gradient-bg {
-            background: linear-gradient(135deg, #c4c5c6 0%, #646364 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
         }
 
         .dark .gradient-bg {
@@ -75,13 +75,13 @@
     </style>
 </head>
 
-<body class="bg-gray-50 dark:bg-dark-900 text-gray-800 dark:text-dark-100">
+<body class="bg-white dark:bg-dark-900 text-gray-800 dark:text-dark-100">
 
     <!-- Main Layout Container -->
     <div class="min-h-screen flex flex-col">
 
         <!-- Header Section (Gradient + Sticky Navbar) -->
-        <header class="gradient-bg dark:bg-dark-800 text-black dark:text-white shadow-lg sticky top-0 z-10">
+        <header class="gradient-bg dark:bg-dark-800 text-black dark:text-white shadow-md sticky top-0 z-50">
             <div class="container mx-auto px-6 py-6">
                 <div class="flex justify-between items-center">
                     <a href="/" class="text-2xl font-bold flex items-center space-x-2">
@@ -89,84 +89,89 @@
                         <span>MetroBook</span>
                     </a>
 
-                    <div class="flex items-center space-x-6">
-                        <!-- Show cart icon only when authenticated -->
-                        @if (User.Identity?.IsAuthenticated == true)
-                        {
-                            <a href="@Url.Action("Index", "Cart")"
-                                class=" p-2 rounded-full hover:text-gray-200 dark:hover:text-dark-700 transition-colors">
-                                <!-- Shopping cart icon -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6h13.4M6 19a2 2 0 104 0 2 2 0 00-4 0zm10 0a2 2 0 104 0 2 2 0 00-4 0z" />
-                                </svg>
-                            </a>
-                        }
+                <div class="flex items-center space-x-6">
+                    <!-- Show cart icon only when authenticated -->
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a href="@Url.Action("Index", "Cart")"
+                            class=" p-2 rounded-full hover:text-gray-200 dark:hover:text-dark-700 transition-colors">
+                            <!-- Shopping cart icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6h13.4M6 19a2 2 0 104 0 2 2 0 00-4 0zm10 0a2 2 0 104 0 2 2 0 00-4 0z" />
+                            </svg>
+                        </a>
 
-                        <!-- Theme Toggle Button -->
-                        <button id="theme-toggle"
-                            class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-dark-700 transition-colors">
-                            <i class="fas fa-moon dark:hidden"></i>
-                            <i class="fas fa-sun hidden dark:block"></i>
-                        </button>
+                        <a href="@Url.Action("Display", "Books")"
+                            class="p-2 px-4 text-black rounded-md hover:bg-blue-700 transition-colors transition-scale">
+                            <i class="fas fa-receipt mr-1"></i> View Orders
+                        </a>
+                    }
 
-                        <!-- User Authentication Links -->
-                        @if (User.Identity?.IsAuthenticated == true)
-                        {
-                            <div class="flex items-center space-x-2">
-                                <i class="fas fa-user-circle text-lg"></i>
-                                <span class="text-sm">Welcome, @User.Identity.Name!</span>
-                            </div>
-                            <a href="/Account/Logout" class="hover:text-gray-200 dark:hover:text-dark-300 transition">
-                                <i class="fas fa-sign-out-alt"></i> Logout
-                            </a>
-                        }
-                        else
-                        {
-                            <a href="/Account/Login" class="hover:text-gray-200 dark:hover:text-dark-300 transition">
-                                <i class="fas fa-sign-in-alt"></i> Login
-                            </a>
-                            <a href="/Account/Register" class="hover:text-gray-200 dark:hover:text-dark-300 transition">
-                                <i class="fas fa-user-plus"></i> Register
-                            </a>
-                        }
-                    </div>
+                    <!-- Theme Toggle Button -->
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-dark-700 transition-colors">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+
+                    <!-- User Authentication Links -->
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-user-circle text-lg"></i>
+                            <span class="text-sm">Welcome, @User.Identity.Name!</span>
+                        </div>
+                        <a href="/Account/Logout" class="hover:text-gray-200 dark:hover:text-dark-300 transition">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="/Account/Login" class="hover:text-gray-200 dark:hover:text-dark-300 transition">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </a>
+                        <a href="/Account/Register" class="hover:text-gray-200 dark:hover:text-dark-300 transition">
+                            <i class="fas fa-user-plus"></i> Register
+                        </a>
+                    }
                 </div>
             </div>
-        </header>
+    </div>
+    </header>
 
 
-        <!-- Main Content Section -->
-        <main class="flex-grow container mx-auto mt-0 max-w-full">
-            @RenderBody()
-        </main>
+    <!-- Main Content Section -->
+    <main class="flex-grow container mx-auto mt-0 max-w-full">
+        @RenderBody()
+    </main>
 
-        <!-- Footer Section (Matching Gradient Background) -->
-        <footer class="gradient-bg dark:bg-dark-800 text-white dark:text-dark-100 py-8 mt-12">
-            <div class="container mx-auto text-center">
-                <div class="space-y-4">
-                    <h4 class="text-lg font-semibold">Stay Connected</h4>
-                    <div class="flex justify-center space-x-4">
-                        <a href="#"
-                            class="text-white dark:text-dark-100 hover:text-gray-300 dark:hover:text-dark-300 transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#"
-                            class="text-white dark:text-dark-100 hover:text-gray-300 dark:hover:text-dark-300 transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#"
-                            class="text-white dark:text-dark-100 hover:text-gray-300 dark:hover:text-dark-300 transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="mt-6 text-sm">
-                    &copy; @DateTime.Now.Year - MetroBook - All rights reserved
+    <!-- Footer Section (Matching Gradient Background) -->
+    <footer class="gradient-bg dark:bg-dark-800 text-white dark:text-dark-100 py-8 mt-12">
+        <div class="container mx-auto text-center">
+            <div class="space-y-4">
+                <h4 class="text-lg font-semibold">Stay Connected</h4>
+                <div class="flex justify-center space-x-4">
+                    <a href="#"
+                        class="text-white dark:text-dark-100 hover:text-gray-300 dark:hover:text-dark-300 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="text-white dark:text-dark-100 hover:text-gray-300 dark:hover:text-dark-300 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="text-white dark:text-dark-100 hover:text-gray-300 dark:hover:text-dark-300 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
                 </div>
             </div>
-        </footer>
+            <div class="mt-6 text-sm">
+                &copy; @DateTime.Now.Year - MetroBook - All rights reserved
+            </div>
+        </div>
+    </footer>
 
     </div>
 

@@ -1,0 +1,29 @@
+﻿@model List<OnlineBookStore.Models.Order>
+
+<h2 class="text-xl font-bold mb-4">My Orders</h2>
+
+@foreach (var order in Model)
+{
+    <div class="border p-4 rounded mb-3 shadow">
+        <strong>Order ID:</strong> @order.OrderId <br />
+        <strong>Date:</strong> @order.OrderDate.ToShortDateString() <br />
+        <strong>Status:</strong> @order.Status <br />
+        <strong>Total:</strong> $@order.FinalAmount <br />
+        <strong>Claim Code:</strong> @order.ClaimCode
+
+        <ul class="mt-2">
+            @foreach (var item in order.OrderItems)
+            {
+                <li>@item.Book.Title (Qty: @item.Quantity, Price: $@item.UnitPrice)</li>
+            }
+        </ul>
+
+        @if (order.Status == "Pending")
+        {
+            <form asp-action="Cancel" asp-controller="Order" method="post">
+                <input type="hidden" name="orderId" value="@order.OrderId" />
+                <button type="submit" class="mt-2 text-red-500 hover:underline">Cancel Order</button>
+            </form>
+        }
+    </div>
+}
