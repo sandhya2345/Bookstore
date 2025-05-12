@@ -27,76 +27,106 @@ namespace OnlineBookStore.Services
             customerMessage.To.Add(MailboxAddress.Parse(customerEmail));
             customerMessage.Subject = "Your MetroBook Order Confirmation";
 
-            var customerHtml = $@"
+         var customerHtml = $@"
 <html>
-    <head>
-        <style>
-            body {{
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                margin: 0;
-                padding: 0;
-            }}
-            .container {{
-                width: 100%;
-                max-width: 600px;
-                margin: 0 auto;
-                background-color: #ffffff;
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet'>
+    <style>
+        body {{
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }}
+        .email-container {{
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+            padding: 40px 30px;
+        }}
+        h1 {{
+            font-size: 26px;
+            color: #1a202c;
+            margin-bottom: 20px;
+        }}
+        p {{
+            font-size: 16px;
+            color: #4a5568;
+            line-height: 1.6;
+        }}
+        .order-summary {{
+            background-color: #edf2f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }}
+        .order-summary p {{
+            margin: 5px 0;
+        }}
+        .highlight {{
+            color: #2b6cb0;
+            font-weight: 600;
+        }}
+        .button {{
+            display: inline-block;
+            background-color: #2b6cb0;
+            color: #ffffff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            margin-top: 30px;
+            transition: background-color 0.3s ease;
+        }}
+        .button:hover {{
+            background-color: #1a4e80;
+        }}
+        .footer {{
+            text-align: center;
+            font-size: 13px;
+            color: #a0aec0;
+            margin-top: 40px;
+        }}
+        .footer a {{
+            color: #2b6cb0;
+            text-decoration: none;
+        }}
+        @media screen and (max-width: 600px) {{
+            .email-container {{
                 padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }}
             h1 {{
-                color: #333333;
-                font-size: 24px;
+                font-size: 22px;
             }}
-            p {{
-                color: #666666;
-                font-size: 16px;
-            }}
-            .btn {{
-                background-color: #1b6ec2;
-                color: #ffffff;
-                padding: 12px 20px;
-                text-align: center;
-                border-radius: 4px;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin-top: 20px;
-            }}
-            .footer {{
-                font-size: 12px;
-                text-align: center;
-                color: #888888;
-                margin-top: 30px;
-            }}
-            .footer a {{
-                color: #1b6ec2;
-                text-decoration: none;
-            }}
-        </style>
-    </head>
-    <body>
-        <div class='container'>
-            <h1>Thank You for Your Purchase, {customerName}!</h1>
-            <p>Your order has been placed successfully with MetroBook.</p>
+        }}
+    </style>
+</head>
+<body>
+    <div class='email-container'>
+        <h1>Hi {customerName},</h1>
+        <p>Thank you for your purchase from <strong>MetroBook</strong>! We're thrilled to have you as a customer. Your order has been successfully placed and is being processed.</p>
 
-            <h2>Order Details:</h2>
-            <p><strong>Total Amount:</strong> Rs. {totalAmount:F2}</p>
-            <p><strong>Claim Code:</strong> {claimCode}</p>
-
-            <p>Please keep your claim code safe. It will be required for pickup or order tracking.</p>
-
-            <a href='#' class='btn'>Track Your Order</a>
-
-            <div class='footer'>
-                <p>&copy; {DateTime.Now.Year} MetroBook | All rights reserved</p>
-                <p>Need help? Contact us at <a href='mailto:support@metrobook.com'>support@metrobook.com</a></p>
-            </div>
+        <div class='order-summary'>
+            <p><strong>Order Summary:</strong></p>
+            <p><span class='highlight'>Total Amount:</span> Rs. {totalAmount:F2}</p>
+            <p><span class='highlight'>Claim Code:</span> {claimCode}</p>
         </div>
-    </body>
+
+        <p>Please keep your <strong>Claim Code</strong> safe. It will be required for tracking or pickup.</p>
+
+        <div class='footer'>
+            <p>&copy; {DateTime.Now.Year} MetroBook. All rights reserved.</p>
+            <p>Need help? <a href='mailto:support@metrobook.com'>Contact Support</a></p>
+        </div>
+    </div>
+</body>
 </html>";
+
 
             customerMessage.Body = new TextPart("html") { Text = customerHtml };
 
@@ -122,58 +152,88 @@ namespace OnlineBookStore.Services
 
             staffMessage.Subject = $"[Order Alert] Claim Code for {customerName}";
 
-            var staffHtml = $@"
+       var staffHtml = $@"
 <html>
-    <head>
-        <style>
-            body {{
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                margin: 0;
-                padding: 0;
-            }}
-            .container {{
-                width: 100%;
-                max-width: 600px;
-                margin: 0 auto;
-                background-color: #ffffff;
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap' rel='stylesheet'>
+    <style>
+        body {{
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f8;
+            color: #333;
+        }}
+        .email-container {{
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+            padding: 40px 30px;
+        }}
+        h3 {{
+            font-size: 22px;
+            color: #1a202c;
+            margin-bottom: 20px;
+        }}
+        p {{
+            font-size: 16px;
+            color: #4a5568;
+            line-height: 1.6;
+        }}
+        .info {{
+            background-color: #edf2f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }}
+        .info p {{
+            margin: 6px 0;
+        }}
+        .label {{
+            color: #2b6cb0;
+            font-weight: 600;
+        }}
+        .footer {{
+            text-align: center;
+            font-size: 13px;
+            color: #a0aec0;
+            margin-top: 40px;
+        }}
+        .footer a {{
+            color: #2b6cb0;
+            text-decoration: none;
+        }}
+        @media screen and (max-width: 600px) {{
+            .email-container {{
                 padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }}
             h3 {{
-                color: #333333;
                 font-size: 20px;
             }}
-            p {{
-                color: #666666;
-                font-size: 16px;
-            }}
-            .footer {{
-                font-size: 12px;
-                text-align: center;
-                color: #888888;
-                margin-top: 30px;
-            }}
-            .footer a {{
-                color: #1b6ec2;
-                text-decoration: none;
-            }}
-        </style>
-    </head>
-    <body>
-        <div class='container'>
-            <h3>New Order Placed</h3>
-            <p><strong>Customer:</strong> {customerName} ({customerEmail})</p>
-            <p><strong>Claim Code:</strong> {claimCode}</p>
-            <p><strong>Total Amount:</strong> Rs. {totalAmount:F2}</p>
-
-            <div class='footer'>
-                <p>&copy; {DateTime.Now.Year} MetroBook | All rights reserved</p>
-                <p>If you have any questions, please contact us at <a href='mailto:support@metrobook.com'>support@metrobook.com</a>.</p>
-            </div>
+        }}
+    </style>
+</head>
+<body>
+    <div class='email-container'>
+        <h3>📦 New Order Received</h3>
+        <div class='info'>
+            <p><span class='label'>Customer:</span> {customerName} ({customerEmail})</p>
+            <p><span class='label'>Claim Code:</span> {claimCode}</p>
+            <p><span class='label'>Total Amount:</span> Rs. {totalAmount:F2}</p>
         </div>
-    </body>
+
+        <p>This order requires processing. Please verify and begin fulfillment as soon as possible.</p>
+
+        <div class='footer'>
+            <p>&copy; {DateTime.Now.Year} MetroBook. All rights reserved.</p>
+            <p>Questions? <a href='mailto:support@metrobook.com'>Contact Support</a></p>
+        </div>
+    </div>
+</body>
 </html>";
 
             staffMessage.Body = new TextPart("html") { Text = staffHtml };
