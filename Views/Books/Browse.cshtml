@@ -15,34 +15,32 @@
     </div>
 }
 
-<div class="container mx-auto px-4 py-8">
-    <!-- Header with Search on the same line -->
-<div class="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
-    <h1 class="text-3xl font-bold">Browse Books</h1>
+<div class="container mx-auto px-12 py-8">
+    <!-- Header -->
+    <div class="mb-6">
+        <h1 class="text-3xl font-bold mb-2">Browse Books</h1>
+        <p class="text-gray-600">
+            Discover a wide range of books across various genres. Use the search bar, genre filter, and sorting options to find your next favorite read.
+        </p>
+    </div>
 
-    <!-- Search Bar with Icon -->
-    <div class="relative w-full md:w-1/3">
-        <form method="get" asp-action="Browse" class="flex">
+   
+    <form method="get" asp-action="Browse" class="flex flex-col md:flex-row gap-4 mb-12">
+        <div class="relative w-full md:w-1/3">
             <input type="text" name="searchTerm" value="@currentSearch"
                    placeholder="Search books..."
                    class="w-full border border-gray-300 rounded-md shadow-sm pl-10 pr-4 py-2 focus:outline-none focus:ring focus:border-blue-300" />
             <button type="submit" class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">
-                🔍
+                <i class="fas fa-search"></i>
             </button>
-        </form>
-    </div>
-</div>
+        </div>
 
-
-    <div class="mb-6">
-    <form method="get" asp-action="Browse" class="flex flex-col md:flex-row gap-4 items-center">
- 
+        <!-- Genre Dropdown -->
         <div class="w-full md:w-1/3">
-            <label for="genre" class="block text-sm font-medium text-gray-700">Genre</label>
-            <select id="genre" name="genre" 
-                    class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring focus:border-blue-300"
+            <select id="genre" name="genre"
+                    class="w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring focus:border-blue-300"
                     onchange="this.form.submit()">
-                <option value="">All</option>
+                <option value="">All Genres</option>
                 @foreach (var g in Model.Genres)
                 {
                     <option value="@g" selected="@(currentGenre == g ? "selected" : null)">@g</option>
@@ -50,24 +48,20 @@
             </select>
         </div>
 
-        <!-- Sort Filter -->
+        <!-- Sort Dropdown -->
         <div class="w-full md:w-1/3">
-            <label for="sortBy" class="block text-sm font-medium text-gray-700">Sort By</label>
-            <select id="sortBy" name="sortBy" 
-                    class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring focus:border-blue-300"
+            <select id="sortBy" name="sortBy"
+                    class="w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring focus:border-blue-300"
                     onchange="this.form.submit()">
-                <option value="">Default</option>
+                <option value="">Sort By</option>
                 <option value="price_asc" selected="@(currentSort == "price_asc" ? "selected" : null)">Price: Low to High</option>
                 <option value="price_desc" selected="@(currentSort == "price_desc" ? "selected" : null)">Price: High to Low</option>
                 <option value="title" selected="@(currentSort == "title" ? "selected" : null)">Title</option>
             </select>
         </div>
     </form>
-</div>
-
-
-        <!-- Main: Book Grid -->
-       <div class="w-full md:w-5/5 mx-auto">
+    
+    <div class="w-full md:w-5/5 mx-auto">
     <!-- Book Grid -->
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         @foreach (var book in Model.Books)
