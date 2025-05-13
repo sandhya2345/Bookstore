@@ -29,6 +29,9 @@
             }
         }
     </script>
+    <!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
@@ -81,6 +84,8 @@
     <div class="min-h-screen flex flex-col">
 
         <!-- Header Section (Gradient + Sticky Navbar) -->
+        @if (!(ViewData["HideHeader"] as bool? ?? false))
+        {
         <header class="gradient-bg dark:bg-dark-800 text-black dark:text-white shadow-md sticky top-0 z-50">
             <div class="container mx-auto px-6 py-6">
                 <div class="flex justify-between items-center">
@@ -140,6 +145,7 @@
             </div>
     </div>
     </header>
+    }
 
 
     <!-- Main Content Section -->

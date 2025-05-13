@@ -13,8 +13,8 @@
     decimal totalAfterDiscount = subtotal - discount;
 }
 
-<div class="container mx-auto px-4 py-10">
-    <h2 class="text-2xl font-semibold text-gray-800 mb-8 text-left">Shopping Cart (@totalBooks)</h2>
+<div class="container mx-auto px-4 py-8">
+    <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-left">Shopping Cart (@totalBooks)</h2>
 
     @if (!Model.Any())
     {
@@ -61,75 +61,107 @@
         <p class="mt-3 text-lg font-medium text-gray-800">Rs. @(item.Book.Price * item.Quantity)</p>
 
         <div class="mt-2 text-sm text-blue-600 flex items-center space-x-4">
-           <button type="submit"
-        name="cartId"
-        value="@item.CartId"
-        formaction="@Url.Action("RemoveFromCart")"
-        formmethod="post"
-        onclick="return confirm('Are you sure you want to remove this item?');"
-        class="text-red-600 hover:text-red-800">
-    <i class="fas fa-trash-alt"></i> Remove
+           @* <button type="submit"
+           name="cartId"
+           value="@item.CartId"
+           formaction="@Url.Action("RemoveFromCart")"
+           formmethod="post"
+           onclick="return confirm('Are you sure you want to remove this item?');"
+           class="text-gray-700 hover:text-red-800">
+           <i class="fas fa-trash-alt text-red-600"></i> Remove
+        </button> *@
+        <button type="button"
+        onclick="confirmRemove(@item.CartId)"
+        class="text-gray-700 hover:text-red-800">
+    <i class="fas fa-trash-alt text-red-600"></i> Remove
 </button>
 
-            <a href="#" class="text-sm text-blue-600 hover:underline">Add To Wishlist</a>
+
+           <a href="#"
+           class="text-gray-700 hover:underline font-medium flex items-center space-x-1">
+            <i class="fas fa-heart text-pink-500"></i>
+            <span>Add to Wishlist</span>
+        </a>
         </div>
     </div>
 </div>
+}
 
-                    }
+<div class="mt-8 text-center">
+    <a href="@Url.Action("Browse", "Books")"
+       class="inline-flex items-center text-black text-bold hover:text-blue-800 hover:underline text-sm font-medium transition">
+        <i class="fas fa-arrow-left mr-2"></i> Continue Shopping
+    </a>
+</div>
 
-                    <div class="mt-6 text-center">
-                        <a  href="@Url.Action("Browse", "Books")"  class="text-sm text-blue-600 hover:underline flex justify-center items-center">
-                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" stroke-width="2"
-                                viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                            </svg>
-                            Continue Shopping
-                        </a>
-                    </div>
                 </div>
 
                 <!-- Order Summary -->
-                <div class="bg-white border rounded-lg shadow-lg p-6 h-fit">
-                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Order Summary</h3>
-                    <!-- Subtotal -->
-                    <div class="flex justify-between mb-4">
-                        <span class="text-lg font-medium text-gray-700">Subtotal</span>
-                        <span id="subtotal" class="text-lg font-semibold text-gray-800">Rs. 0.00</span>
-                    </div>
+             <div class="relative -top-4 bg-white border border-gray-200 rounded-md shadow-md p-6 md:p-8 h-fit">
+    <!-- Header -->
+    <h3 class="text-2xl font-bold mb-6 text-gray-900 border-b pb-2">
+      Order Summary
+    </h3>
 
-                    <!-- Discount -->
-                    <div class="text-sm text-green-600 mb-4" id="discount-info" style="display:none;"></div>
+    <!-- Subtotal -->
+    <div class="flex justify-between items-center mb-4">
+        <span class="text-base md:text-lg font-medium text-gray-700">
+            <i class="fas fa-list-ul text-gray-500 mr-2"></i>Subtotal
+        </span>
+        <span id="subtotal" class="text-base md:text-lg font-semibold text-gray-900">Rs. 0.00</span>
+    </div>
 
-                    <!-- Total -->
-                    <div class="flex justify-between mt-4 border-t pt-4 font-semibold text-lg">
-                        <span>Total</span>
-                        <span id="total" class="text-xl text-gray-800">Rs. 0.00</span>
-                    </div>
+    <!-- Discount Info -->
+    <div id="discount-info" class="text-sm text-green-600 mb-4 hidden">
+        <i class="fas fa-tag mr-1"></i> Discount applied
+    </div>
 
-                    <!-- Gift Wrap -->
-                    <div class="mt-4 flex items-start space-x-2">
-                        <input type="checkbox" class="mt-1" />
-                        <span class="text-sm">Is this a gift? <br /><span class="text-gray-500">+ Rs. 15 for gift wrap</span></span>
-                    </div>
+    <!-- Total -->
+    <div class="flex justify-between items-center mt-4 border-t pt-4 font-semibold text-base md:text-xl text-gray-800">
+        <span>Total</span>
+        <span id="total" class="text-xl font-bold text-gray-900">Rs. 0.00</span>
+    </div>
 
-                    <div class="mt-4 text-sm text-gray-600">
-                        Discounts can be applied at the next window. <br />
-                        Shipping costs will be calculated at checkout.
-                    </div>
+    <!-- Gift Wrap Option -->
+    <div class="mt-5 flex items-start space-x-3">
+        <input type="checkbox" class="mt-1 accent-blue-600 w-4 h-4" />
+        <span class="text-sm text-gray-700 leading-tight">
+            <i class="fas fa-gift text-pink-500 mr-1"></i>Is this a gift? <br />
+            <span class="text-xs text-gray-500">+ Rs. 15 for gift wrap</span>
+        </span>
+    </div>
 
-                    <div class="mt-6 text-sm font-medium text-gray-700">
-                        <span class="inline-block mr-2">🎟</span> Have a discount coupon? Apply it in the next step.
-                    </div>
+    <!-- Notes -->
+    <div class="mt-5 text-sm text-gray-600 leading-relaxed">
+        <i class="fas fa-info-circle mr-2 text-blue-400"></i>
+        Discounts can be applied at the next window. <br />
+        Shipping costs will be calculated at checkout.
+    </div>
 
-                    <button type="submit" class="mt-6 w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
-                        PROCEED TO CHECKOUT
-                    </button>
-                </div>
-            </div>
+    <!-- Discount Coupon Note -->
+    <div class="mt-6 text-sm font-medium text-gray-700 flex items-center">
+        <i class="fas fa-ticket-alt text-orange-500 mr-2"></i>
+        Have a discount coupon? Apply it in the next step.
+    </div>
+
+    <!-- Checkout Button -->
+    <button type="submit"
+    class="mt-8 w-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white text-sm md:text-base font-semibold py-2.5 rounded-lg shadow-md transition duration-300 ease-in-out">
+    <i class="fas fa-arrow-right mr-2"></i> PROCEED TO CHECKOUT
+</button>
+
+</div>
+
+</div>
+
         </form>
     }
 </div>
+<form id="removeForm" method="post" action="@Url.Action("RemoveFromCart")">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="cartId" id="removeCartId" />
+</form>
+
 
 <!-- JavaScript for quantity update -->
 <script>
@@ -208,7 +240,7 @@
     calculateSummary();
 </script>
 
-<script>
+@* <script>
     // Intercept form submission
     document.getElementById('cartForm').addEventListener('submit', function (e) {
         const selectedItems = document.querySelectorAll('.select-item:checked');
@@ -224,4 +256,49 @@
             });
         }
     });
+</script> *@
+
+<script>
+    document.getElementById('cartForm').addEventListener('submit', function (e) {
+        const selectedItems = document.querySelectorAll('.select-item:checked');
+
+        if (selectedItems.length === 0) {
+            e.preventDefault(); // Prevent form submission
+
+            // Show a toast alert in top-right
+            Swal.fire({
+                toast: true,
+                position: 'top-end',
+                icon: 'warning',
+                title: 'Please select at least one item.',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                customClass: {
+                    popup: 'shadow-md'
+                }
+            });
+        }
+    });
+</script>
+
+
+<script>
+    function confirmRemove(cartId) {
+        Swal.fire({
+            title: 'Remove Item?',
+            text: "This will delete the book from your cart.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#e3342f',
+            cancelButtonColor: '#6c757d',
+            confirmButtonText: 'Yes, remove it',
+            cancelButtonText: 'Cancel'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById('removeCartId').value = cartId;
+                document.getElementById('removeForm').submit();
+            }
+        });
+    }
 </script>

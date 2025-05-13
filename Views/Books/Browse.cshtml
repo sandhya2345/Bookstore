@@ -7,13 +7,33 @@
     var currentSort = Model.SortBy;
 }
 
-@if (TempData["Success"] != null)
+@* @if (TempData["Success"] != null)
 {
     <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative mb-6" role="alert">
         <strong class="font-bold">Success!</strong>
         <span class="block sm:inline">@TempData["Success"]</span>
     </div>
+} *@
+
+@if (TempData["Success"] != null)
+{
+    <script>
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success',
+            title: '@TempData["Success"]',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        });
+    </script>
 }
+
 
 <div class="container mx-auto px-12 py-8">
     <!-- Header -->

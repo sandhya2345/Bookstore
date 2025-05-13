@@ -113,7 +113,7 @@ namespace OnlineBookStore.Controllers
                 discount += subtotal * 0.05m;  // 5% off for 5+ books
 
             var pastOrders = await _context.Orders
-                .CountAsync(o => o.UserId == userId && o.Status == "Completed");
+                .CountAsync(o => o.UserId == userId && o.Status == "Processed");
             if (pastOrders >= 10)
                 discount += subtotal * 0.10m;  // extra 10% for loyalty
 
